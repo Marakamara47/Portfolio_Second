@@ -111,8 +111,20 @@ height: auto;
 }
 
 /* -----skills_block"----- */
+.skills_block{
+    padding-top: 2vh;
+    padding-bottom: 7vh;
+}
+.skills_block_name{
+    color: lightgrey;
+    font-size: 2vh;
+    padding-bottom: 4vh;
+}
 .skills_drops{
     display: flex;
+}
+.drop_title{
+    color:greenyellow;
 }
 .hard_skills_drops{
     display: flex;
@@ -140,3 +152,42 @@ height: auto;
     padding-left: 1vw;
     padding-bottom: 1vw;
 }
+.drop_text{
+    color: lightgray;;
+}
+
+/* -----education_block-----*/
+.education_block{
+    padding-bottom: 5vh;
+}
+.education_block_name{
+    color: lightgrey;
+    font-size: 2vh;
+    padding-bottom: 4vh;
+}
+.education_item{
+    display: flex;
+}
+.education_item_photo > img{
+    width: 40vw;
+    border-radius: 12%;
+}
+.education_item_title{
+    font-size: 4vh;
+    padding-bottom: 2vh;
+    align-self: flex-start;
+}
+.education_item_text{
+    padding-left: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.education_item_subscription{
+    text-align: justify;
+    font-size: 1.5vw;
+    line-height: 2vw;
+    color: lightgray;
+}
+
