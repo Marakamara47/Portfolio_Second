@@ -1,4 +1,4 @@
-/* -----Main----- */
+/* -----main----- */
 *{
     font-family: roboto;
     color: white;
@@ -22,8 +22,8 @@
     padding-top: 4vh;
     padding-bottom: 4vh;
 }
-/* -----Header----- */
-/* -----Navigation----- */
+/* -----header----- */
+/* -----navigation----- */
 
 .navigation{
     width: 100%;
@@ -31,7 +31,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: fixed;
     align-items:center;
 }
 .navigation_menu{
@@ -40,17 +39,14 @@
 .navigation_menu_item{
     display: inline;
     padding: 1.7vw;
-    font-size: 1.5vw;
-}
-.navigation_link{
-    text-decoration: none;
+    font-size: 1.3vw;
 }
 .navigation_title{
     padding: 1.7vw;
     font-size: 1.5vw;
 }
 
-/* -----About_block----- */
+/* -----about_block----- */
 .about_text > h1{
     font-size: 8vh;
     padding-bottom: 3vh;
@@ -72,9 +68,10 @@
 .about_image > img{
     width: auto;
     height: 65vh;
+    border-radius: 10%;
 }
 
-/* -----Work experience----- */
+/* -----work experience----- */
 .work_experience{
     height: auto;
     display: flex;
@@ -123,7 +120,6 @@ height: auto;
 
 /* -----skills_block"----- */
 .skills_block{
-    padding-top: 2vh;
     padding-bottom: 7vh;
 }
 .skills_drops{
@@ -246,14 +242,181 @@ height: auto;
 }
 .link{
     padding-bottom: 1vw;
+    font-size: 2vh;
 }
 .link > a{
     color: greenyellow;
-    font-size: 2vh;
 }
 .contacts_block_text{
     text-align: justify;    
     font-size: 1.3vw;
     line-height: 1.5vw;
     color: lightgrey;
+}
+
+/*----------------------------------------------------- adapt----- */
+
+/* -----991px----- */
+@media(max-width:991px){
+    /* -----about_block----- */
+    .about_block{
+        flex-direction: column;
+    }
+    .about_text{
+        padding-top: 2vh;
+    }
+    /* -----work experience----- */
+    .work_experience_data{
+        flex-direction: column;
+    }
+    .work_experience_card{
+        flex-direction: row;
+        width: 100%;
+    }
+    .card_data{
+        display: flex;
+        flex-direction: column;
+        padding-left: 2vh;
+        padding-top: 1vh;
+    }
+    .card_text{
+        text-indent: 0;
+    }
+    .card_number{
+        font-size: 11vw;
+    }
+    /* -----skills_block"----- */
+    .skills_drops{
+        flex-direction: column;
+    }
+    .hard_skills_drops, .soft_skills_drops{
+        width: 100%;
+    }
+    .drop{
+        font-size: 1.8vw;
+    }
+}
+/* -----870px------ */
+@media(max-width: 871px){
+    /* -----skills_block"----- */
+    .drop{
+        line-height: 3vh;
+    }
+}
+/* ------767px----- */
+@media(max-width:767px){
+    /* -----about_block----- */
+    .about_text > h1 {
+        font-size: 6vh;
+        text-align: center;
+    }
+    .about_text{
+        text-align: justify;
+    }
+    /* -----skills_block"----- */
+    .drop {
+        line-height: 2vh;
+    }
+    /* -----project_block------ */
+    .project_block_photo > img{
+        width: 30vw;
+    }
+    /* -----work experience----- */
+    .card_text{
+        font-size: 2vw;
+    }
+}
+/* -----479px----- */
+@media(max-width:479px){
+    /* -----main----- */
+    .wraper{
+        height: 80vh;
+    }
+    .block_name {
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+    /* -----navigation----- */
+    .navigation{
+        height: 7vh;
+    }
+    .navigation_menu_item {
+        font-size: 1.7vw;
+    }
+    /* -----about_block----- */
+    .about_image > img {
+        height: 50vh;
+    }
+    .about_text > h1 {
+        font-size: 3vh;
+        padding-bottom: 1vh;
+    }
+    .about_text > span {
+        font-size: 2.5vh;
+    }
+    /* -----work experience----- */
+    .work_experience_title {
+        padding-bottom: 0vh;
+    }
+    .card_text {
+        font-size: 2.3vw;
+        text-align: justify;
+    }
+    .card_title {
+        font-size: 4.5vw;
+        padding-bottom: 1vh;
+    }
+    .card_number {
+        font-size: 13vw;
+    }
+    /* -----skills_block"----- */
+    .skills_block{
+
+        padding-top: 0;
+    }
+    .hard_skills_drops, .soft_skills_drops{
+        flex-direction: column;
+    }
+    .drop {
+        font-size: 2.8vw;
+        width: 100%;
+        padding-bottom: 1vh;
+        line-height: 2vh;
+    }
+    .skills_drpops_title{
+        padding-top: 1vh;
+        font-size: 3.5vw;
+    }
+    /* -----contacts_block----- */
+    .contacts_block_text {
+        font-size: 1.8vw;
+        line-height: 1.7vw;
+    }
+    .contacts_block_content{
+        width: 70vw;
+    }
+    .link{
+        font-size: 1.1vh;
+    }
+    .contants_block_links{
+        width: 20vw;
+    }
+    /* -----education_block-----*/
+    .education_block {
+        padding-bottom: 0vh;
+    }
+    .education_item_title {
+        font-size: 2vh;
+    }
+    .education_item_subscription {
+        font-size: 2vw;
+    }
+    .project_block_content{
+        font-size: 2vw;
+    }
+    /* -----project_block */
+    .project_block_title {
+        font-size: 2vh;
+        padding-bottom: 1vh;
+    }
 }
