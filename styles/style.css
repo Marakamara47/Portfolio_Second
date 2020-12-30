@@ -1,3 +1,4 @@
+/*----------------------------------------------------- default styles----- */
 /* -----main----- */
 *{
     font-family: roboto;
@@ -23,8 +24,8 @@
     padding-bottom: 4vh;
 }
 /* -----header----- */
-/* -----navigation----- */
 
+/* -----navigation----- */
 .navigation{
     width: 100%;
     height: 7vh;
@@ -44,6 +45,10 @@
 .navigation_title{
     padding: 1.7vw;
     font-size: 1.5vw;
+    color: greenyellow;
+}
+.navigation_link{
+    color: greenyellow;
 }
 
 /* -----about_block----- */
@@ -222,6 +227,7 @@ height: auto;
 .project_block_content > p{
     color: lightgray;
 }
+
 /* -----contacts_block----- */
 .contacts_block_info{
     display: flex;
@@ -252,6 +258,30 @@ height: auto;
     font-size: 1.3vw;
     line-height: 1.5vw;
     color: lightgrey;
+}
+
+/* ---------------------------------------------------- tooltip----- */
+
+[data-tooltip] {
+    position: relative; 
+   }
+[data-tooltip]::after {
+    content: attr(data-tooltip); 
+    position: absolute; 
+    width: 37vw; 
+    left: 0; top: 0; 
+    background: lightgray ; 
+    color: black; 
+    font-size: 1.5vw ;
+    padding: 0.5em; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    pointer-events: none; 
+    opacity: 0; 
+    transition: 1s;
+} 
+[data-tooltip]:hover::after {
+    opacity: 1; 
+    top: 1.5em; 
 }
 
 /*----------------------------------------------------- adapt----- */
