@@ -450,3 +450,23 @@ height: auto;
         padding-bottom: 1vh;
     }
 }
+/* -----321px----- */
+@media(max-width:321px){
+    /* -----about_block----- */
+    .about_image > img {
+        height: 42vh;
+    }
+    /* -----work experience----- */
+    .card_text{
+        line-height: 1.5vh;
+    }
+    /* -----skills_block"----- */
+    .skills_block {
+        padding-bottom: 0;
+    }
+    /* -----contacts_block----- */
+    .contacts_block_text {
+        font-size: 2.8vw;
+        line-height: 3.7vw;
+    }
+}
