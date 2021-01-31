@@ -195,8 +195,8 @@ height: auto;
 }
 
 /* -----project_block------ */
-.project_block_photo{
-    width: 40vw;
+.project_block_photo > img{
+    width: 24vw;
     border-radius: 12%;
 }
 .project_block_item{
@@ -210,12 +210,16 @@ height: auto;
     justify-content: center;
     align-items: center;
 }
+.reverse{
+    padding-left: 0vw;
+    padding-right: 2vw;
+}
 .project_block_title{
     font-size: 4vh;
     padding-bottom: 2vh;
     align-self: flex-start;
 }
-.project_block_title > h3{
+.project_block_title > h3 > a, .project_block_content > span > a {
     color: greenyellow;
 }
 .project_block_content{
